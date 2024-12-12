@@ -1,0 +1,21 @@
+VERSION 1.0
+
+ACQUISITION
+project: Sample Acquisition
+experiment: EXP_001
+path: testing/test1.zip
+date: 2024-12-10
+operator: Name Surname, Ph.D.
+metadata:
+  description: Test acquisition with variable parameters
+  custom_field1: Value1
+  custom_field2: Value2
+num_steps: 4
+
+STEPS
+# Columns: step, t_int (integration time), gain, z_pos (z position), lam (wavelength), 
+#          phi_g (global angle), phi_a (absolute angle), flt_a (filter: 1, 2, 3, or 4)
+0	100	1.5	0.0	550	45	90	1
+1	110	1.8	0.0	600	50	95	2
+2	120	2.0	0.0	650	55	100	3
+3	130	2.2	0.0	700	60	105	4
